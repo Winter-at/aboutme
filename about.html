@@ -8,16 +8,24 @@
         * { font-family:"標楷體"; margin: 0 auto; }
         h1 { color:green; font-size:60px; text-align: center; }
         h2 { color:blueviolet; font-size:40px; text-align: center; }
-        table { margin-left: auto; margin-right: auto; }
     </style>
+    <script>
+		function change1() {
+  			document.getElementById("pic").src = "20230802_184151.jpg.jpg";
+  			document.getElementById("h2text").innerText = "Winter";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "20230804_124441.jpg";
+  			document.getElementById("h2text").innerText = "Chien-Liang Lai";
+		}
+	</script>
 </head>
 <body>
-    <table width="60%">
+    <table width="70%">
         <tr>
             <td>
-                <img src="20230804_124441.jpg" width="60%" id="pic" 
-                     onmouseover="this.src='20230802_184151.jpg'; document.getElementById('h2text').innerText='Winter';" 
-                     onmouseout="this.src='20230804_124441.jpg'; document.getElementById('h2text').innerText='Chien-Liang Lai';">
+               <img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
             </td>
             <td>
                 <h1>賴建良</h1>
